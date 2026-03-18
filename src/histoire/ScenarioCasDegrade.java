@@ -7,7 +7,6 @@ public class ScenarioCasDegrade {
     public static void main(String[] args) {
         Gaulois assurancetourix = new Gaulois("Assurancetourix", 2);
 
-        // TEST 1 : Étaler non occupé
         System.out.println("=== Test 1: étal non occupé ===");
         Etal etalNonOccupe = new Etal();
 
@@ -19,7 +18,6 @@ public class ScenarioCasDegrade {
             e.printStackTrace();
         }
 
-        // TEST 2 : Étaler occupé (pour vérifier que ça marche)
         System.out.println("\n=== Test 2: étal occupé ===");
         Etal etalOccupe = new Etal();
         etalOccupe.occuperEtal(assurancetourix, "lyres", 5);
